@@ -22,6 +22,7 @@ var menuItemsUrl =
   "https://davids-restaurant.herokuapp.com/menu_items.json?category=";
 var menuItemsTitleHtml = "snippets/menu-items-title.html";
 var menuItemHtml = "snippets/menu-item.html";
+var aboutHtml = "snippets/about-snippet.html";
 
 // Convenience function for inserting innerHTML for 'select'
 var insertHtml = function (selector, html) {
@@ -137,6 +138,34 @@ function chooseRandomCategory (categories) {
   return categories[randomArrayIndex];
 }
 
+/** Load the About Content */
+dc.loadAboutMenu = function () {
+    showLoading("#main-content");
+    $ajaxUtils.sendGetRequest(aboutHtml, function(aboutHtml) {
+
+        var outputHtml = "";
+
+        // 5 minus the random number. The result will be how many stars will be in there
+        var randomNumStars = generateRandomNumber();
+        var outStarPrint = randomNumStars;
+
+        // Split the HTML by new line
+        var htmlSplit = aboutHtml.split("\n");
+
+        for (var i = 0; i < htmlSplit.length; i++) {
+            if (htmlSplit[i].includes("span") && randomNumStars > 0) {
+                outputHtml += insertProperty(htmlSplit[i], "starClass", "fa fa-star");
+                randomNumStars -= 1;
+            }
+            outputHtml += htmlSplit[i];
+        }
+
+        /** BONUS / Extra Credit Section */
+        outputHtml += "<span>" + outStarPrint + "-star(s) rating</span>";
+
+        insertHtml("#main-content", outputHtml);
+    }, false);
+};
 
 // Load the menu categories view
 dc.loadMenuCategories = function () {
@@ -335,6 +364,12 @@ function insertItemPortionName(html,
   portionValue = "(" + portionValue + ")";
   html = insertProperty(html, portionPropName, portionValue);
   return html;
+}
+
+/** Generates random number between 1 and 5 */
+function generateRandomNumber() {
+    var randomNum = Math.floor((Math.random() * 5) + 1);
+    return randomNum;
 }
 
 
