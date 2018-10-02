@@ -147,21 +147,29 @@ dc.loadAboutMenu = function () {
 
         // 5 minus the random number. The result will be how many stars will be in there
         var randomNumStars = generateRandomNumber();
-        var outStarPrint = randomNumStars;
+        var starOutputTotalCount = randomNumStars;
 
         // Split the HTML by new line
         var htmlSplit = aboutHtml.split("\n");
 
-        for (var i = 0; i < htmlSplit.length; i++) {
-            if (htmlSplit[i].includes("span") && randomNumStars > 0) {
+        // Concatnate the beginning <div>
+        outputHtml += htmlSplit[0];
+
+        // Replace the "StarClass" element in the about-snippet.html <span> tags
+        for (var i = 1; i < htmlSplit.length-1; i++) {
+            if (randomNumStars !== 0) {
                 outputHtml += insertProperty(htmlSplit[i], "starClass", "fa fa-star");
                 randomNumStars -= 1;
+            } else if (randomNumStars === 0) {
+                outputHtml += insertProperty(htmlSplit[i], "starClass", "fa fa-star-o");
             }
-            outputHtml += htmlSplit[i];
         }
 
-        /** BONUS / Extra Credit Section */
-        outputHtml += "<span>" + outStarPrint + "-star(s) rating</span>";
+        /** BONUS : Extra Credit Section */
+        outputHtml += "<span>" + starOutputTotalCount + "-star(s) rating</span>";
+
+        // Concatnate the ending <div>
+        outputHtml += htmlSplit[htmlSplit.length-1];
 
         insertHtml("#main-content", outputHtml);
     }, false);
