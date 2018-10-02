@@ -40,13 +40,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="450" />
+          <entry key="html" value="451" />
           <entry key="js" value="5607" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="450" />
+          <entry key="HTML" value="451" />
           <entry key="JavaScript" value="5607" />
         </counts>
       </usages-collector>
@@ -63,8 +63,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/script.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="225">
-                  <caret line="15" column="10" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+                <state relative-caret-position="1185">
+                  <caret line="163" column="83" lean-forward="true" selection-start-line="163" selection-start-column="83" selection-end-line="163" selection-end-column="83" />
                 </state>
               </provider>
             </entry>
@@ -76,8 +76,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="45">
-                  <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+                <state relative-caret-position="165">
+                  <caret line="11" column="82" selection-start-line="11" selection-start-column="82" selection-end-line="11" selection-end-column="82" />
                 </state>
               </provider>
             </entry>
@@ -196,7 +196,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/edwardkim/Desktop/Johns-Hopkins-University/Internet-Applications-with-Ajax/Module5/module5-hw/snippets/about-snippet.html&#10;categories&#9;FILE&#9;file:///Users/edwardkim/Desktop/Johns-Hopkins-University/Internet-Applications-with-Ajax/Module5/module5-hw/snippets/categories-title-snippet.html&#10;home-sni&#9;FILE&#9;file:///Users/edwardkim/Desktop/Johns-Hopkins-University/Internet-Applications-with-Ajax/Module5/module5-hw/snippets/home-snippet.html&#10;about&#9;FILE&#9;file:///Users/edwardkim/Desktop/Johns-Hopkins-University/Internet-Applications-with-Ajax/Module5/module5-hw/snippets/about-snippet.html&#10;categories-title-snippet&#9;FILE&#9;file:///Users/edwardkim/Desktop/Johns-Hopkins-University/Internet-Applications-with-Ajax/Module5/module5-hw/snippets/categories-title-snippet.html" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538518633782" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538519190230" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -239,17 +239,18 @@
       <workItem from="1537396404576" duration="570000" />
       <workItem from="1537397623452" duration="8782000" />
       <workItem from="1537979947259" duration="5000" />
-      <workItem from="1538515867128" duration="2432000" />
+      <workItem from="1538515867128" duration="2867000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15910000" />
+    <option name="totallyTimeSpent" value="16345000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1264" y="23" width="1296" height="1417" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.18899521" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18899521" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -318,6 +319,13 @@
     <entry file="file://$PROJECT_DIR$/snippets/home-snippet.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1185">
+          <caret line="163" column="83" lean-forward="true" selection-start-line="163" selection-start-column="83" selection-end-line="163" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/snippets/about-snippet.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -327,15 +335,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="10" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+        <state relative-caret-position="165">
+          <caret line="11" column="82" selection-start-line="11" selection-start-column="82" selection-end-line="11" selection-end-column="82" />
         </state>
       </provider>
     </entry>
